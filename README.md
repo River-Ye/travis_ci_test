@@ -90,7 +90,11 @@ $ rspec
 language: ruby
 rvm:
 - 2.6.3
-install: bundle install
+install:
+  - bundle install
+  - nvm install 10
+  - npm i -g yarn
+  - yarn
 services:
   - postgresql
 script:
